@@ -126,7 +126,6 @@ events.on('order:open', () => {
 });
 
 events.on('order:changed', (button: HTMLButtonElement) => {
-    console.log(button)
     appData.setOrderField('payment', button.name);
 });
 

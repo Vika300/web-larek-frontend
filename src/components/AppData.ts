@@ -54,7 +54,6 @@ export class AppState extends Model<IAppState> {
 	}
 
     getButtonText (item: IProduct) {
-        console.log(this.isInBasket(item))
         if (this.isInBasket(item)) {
             return 'Удалить из корзины';
         } else {
