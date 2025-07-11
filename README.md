@@ -208,7 +208,6 @@ formErrors: FormErrors;
 - `setCatalog(items: IProduct[])` - задать каталог
 - `setPreview(item: IProduct)` - вызов модального окна карточки продукта
 - `getTotalCost()` - получить общую стоимость товаров
-- `getBasketCount()` - получить число товаров в корзине 
 - `setOrderField(field: keyof IOrderForm, value: string)` - установить значение поля заказа с последующей валидацией
 - `setContactsField(field: keyof IOrderForm, value: string)` - установить значение поля контактов с последующей валидацией
 - `validateOrder()` - валидация заполнения формы заказа

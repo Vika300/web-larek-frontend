@@ -75,10 +75,6 @@ export class AppState extends Model<IAppState> {
         return this.order.items.reduce((a, c) => a + this.catalog.find(it => it.id === c).price, 0)
     }
 
-    // getBasketCount() {
-    //     return this.basket.length;
-    // }
-
     setOrderField(field: keyof IOrderForm, value: string) {
         this.order[field] = value;
         this.validateOrder();
